@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block title %}My page{% endblock %}
+{% block body %}
+<h1>{{ title }}</h1>
+
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus leo massa, aliquam eu cursus a, cursus eget nisi. Nunc sed mi risus. Sed non gravida ex. Aenean euismod vitae diam et accumsan. Nulla porta arcu et libero sollicitudin molestie. Fusce lobortis velit quis aliquam venenatis. Ut elementum lacus a libero ultrices, sit amet dictum justo fringilla.
+
+    </p>
+    <p>Mauris pellentesque varius nunc ac volutpat. Maecenas quis condimentum sapien. Etiam sed ex vel nisl mattis aliquam vitae ac mi. Donec varius, nulla ut vehicula malesuada, ligula mi bibendum libero, sed mollis dolor ipsum in est. Praesent id auctor nibh, id pulvinar dolor. Duis varius arcu urna, id fermentum odio auctor eget. Donec porta ipsum suscipit dui porta accumsan sit amet a erat. Phasellus pulvinar placerat felis, in aliquam ex. Mauris condimentum efficitur urna, ut rutrum urna consectetur vel. Mauris consectetur sem vitae consectetur posuere. Donec ac dolor nec ligula porta bibendum nec vel sem. Nullam lobortis arcu lorem, non pellentesque ante tincidunt non. Donec dictum a lectus at pretium.
+
+    </p>
+    <p>Cras id aliquam tortor, sit amet vestibulum nunc. Suspendisse aliquam nisl ex, pharetra pellentesque turpis consectetur in. Proin volutpat vulputate diam a tristique. Proin scelerisque a neque vitae consectetur. Curabitur leo quam, aliquam sit amet fringilla non, faucibus eu augue. Sed sodales molestie ex. Nunc sit amet ultricies sem. Fusce eleifend et urna at tristique. Praesent vitae laoreet urna. Pellentesque tincidunt leo nisl. Nam aliquet, nisl eget gravida malesuada, felis lorem imperdiet arcu, sit amet porta ex nunc eu metus. Nullam cursus massa vitae ligula fringilla fermentum. Curabitur tincidunt cursus ipsum, et tempus magna ornare eu. Mauris at metus et nisi sollicitudin ultricies. Fusce porta nec velit vitae accumsan.
+
+    </p>
+    <p>Vivamus scelerisque pulvinar eros, eu aliquam diam dictum sit amet. Aenean tempor risus id velit ullamcorper aliquet. Integer vitae lectus odio. Cras mauris urna, vulputate eu turpis vel, vulputate sodales sapien. Vivamus ut erat arcu. Pellentesque eget mauris a quam interdum accumsan. Quisque quis nisl elementum, viverra enim et, ullamcorper mauris. Proin maximus non tortor sit amet tempor. Nam convallis, libero nec consectetur finibus, quam felis lobortis quam, quis tincidunt sem ligula in quam. Quisque eleifend efficitur arcu eu rutrum. Phasellus sed sollicitudin est. Donec fringilla laoreet lorem, non dignissim nisl hendrerit id. Morbi malesuada dui eu lacinia suscipit.
+
+    </p>
+    <p>Vestibulum rutrum magna nec arcu posuere, sit amet pulvinar leo accumsan. Ut dolor dui, egestas non euismod eu, placerat quis risus. Fusce sit amet erat nibh. Nullam porta, diam eu finibus venenatis, velit tellus tempor lorem, sed imperdiet nibh mauris non lectus. Proin hendrerit diam eget eros lobortis lobortis. Suspendisse ut odio eu lorem eleifend ornare. Suspendisse vel velit leo.
+
+    </p>
+    <p>Nulla vulputate hendrerit justo. Mauris scelerisque odio non elementum tempor. Aliquam accumsan ante quis ipsum convallis, ac convallis nunc molestie. Donec libero ante, hendrerit sed dui ac, mattis bibendum purus. Phasellus hendrerit, nisi vitae fringilla efficitur, nulla nibh fringilla felis, non consectetur eros lorem sed elit. Mauris egestas rutrum turpis id vulputate. Praesent maximus, lorem vel aliquam imperdiet, turpis purus bibendum eros, sit amet efficitur sapien ligula id est. Nulla hendrerit vitae risus nec scelerisque. Vivamus eu risus at nunc feugiat pellentesque.
+
+    </p>
+    <p>Pellentesque porta malesuada mauris eget mollis. Donec quis odio et nisl consequat dapibus eu et felis. Nulla vitae odio imperdiet, consectetur enim a, tincidunt leo. Nullam congue eleifend auctor. Proin nec augue dapibus, vehicula augue quis, fermentum odio. Nulla facilisi. Nam vestibulum posuere dui eget euismod. Vestibulum tellus lacus, feugiat id massa at, suscipit lobortis est. Nunc a velit lobortis, tincidunt diam eget, tempor tortor. In interdum ut ante non semper. Sed dapibus tortor velit, vitae maximus nisl tempor ac. Suspendisse a vestibulum ex. Nullam ac nunc mauris. Cras at lacus id odio vestibulum faucibus a in mauris.
+    </p>
+
+</div>
+
+
+<h2>Comments ({{ comments|length }})</h2>
+
+<ul>
+{% for comment in comments %}
+    <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
