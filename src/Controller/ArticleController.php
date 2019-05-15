@@ -37,6 +37,8 @@ class ArticleController extends AbstractController
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor ut diam et vestibulum. Phasellus."
         ];
 
+        dump($slug, $this);
+
         return $this->render('article/show.html.twig', [
            'title' => ucwords(str_replace('-', ' ', $slug)),
             'comments'=>$comments,
